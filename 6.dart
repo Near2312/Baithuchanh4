@@ -1,15 +1,15 @@
 void main()
 {
-    Map<String, dynamic> country = 
+    Map<String, dynamic> infor = 
     {
-        "name" : "Thien",
-        "address": "Kien An",
-        "age" : 22,
-        "country keys": 084
+        "Thien" : {"Kien An", 22, "Viet Nam"},
+        "Hung": {"Kien An", 23, "Viet Nam"},
+        "Doan" :{"Hai Phong", 22, "Viet Nam"},
+        "Kien":{"Mi Duc", 22, "VietNam"}
     };
-    country['name'] = 'Hung';
+    infor['Hung'] = 'Huong';
 
-    country.forEach((key, value){
+    infor.forEach((key, value){
         print("$key : $value");
     });   
 }
